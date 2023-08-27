@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>DarkFlix Home</title>
+
+    <style>
+
+body {
+            margin: 0;
+            padding: 0;
+            background-image: url('filmes trash/ap.terro.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.10);
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+
+
+        .faixa-preta {
+            position: fixed;
+            height: 104px;
+            color: transparent;
+        }
+
+        .header {
+            position: fixed;
+            align-items: left;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #404258, rgba(0, 0, 0, 0.5));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .menu {
+            display: flex; 
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+        }
+
+        .menu li {
+            margin-right: 10px;
+        }
+
+        .menu button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            background-color: transparent;
+            color: whitesmoke;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin: 20px;
+            color: #fff;
+        }
+
+        .banner1 {
+            float: right;
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+          
+        }
+        .texto_esquerda{
+           text-align: center;
+           display: flex;
+           align-items: center;
+           font-size:45px;
+           height: 12vh;
+           text-align: left;
+           margin-left: 100px;
+           font-family: 'Bebas Neue', sans-serif;
+           color:#9DB2BF;
+
+}
+
+        .faixa_de_texto{
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            td {
+            width: 33.33%;
+            padding: 20px;
+            vertical-align: top; 
+            display: inline-block;
+            box-sizing: border-box; 
+        }}
+
+        p {
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 16px;
+            line-height: 1.5;}
+
+            .titulo1, .titulo2, .titulo3 {
+            color: red;
+            font-family: 'Bebas Neue', sans-serif;
+    font-size: xx-large;
+}
+
+        .titulo1, .titulo2, .titulo3,
+
+        .texto1, .texto2, .texto3 {    
+            margin: 0;
+        }
+
+        td {
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 33.33%;
+            padding: 20px;
+            vertical-align: top;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+
+
+        .botaoassine{
+            size: 45px;
+            position:relative;
+            left:200px;
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgba(220, 0, 0, 1);
+            background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+            box-shadow:
+            inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+            inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+                                                    }
+
+         .styled:hover {
+            background-color: rgba(255, 0, 0, 1);
+                                                    }
+
+         .styled:active {
+        box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+
+
+
+                                                    }
+                                                    
+       .grade{
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+       }
+ 
+      .faixa-preta2{
+       background-color: black;
+      width: 100px;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+
+       }
+   
+       .botoessociais{
+       
+        display: flex;
+            left:200px;
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+  
+
+       }
+
+       .icones{
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+
+
+       }
+
+      .links{
+        display: flex;
+        align-items: center;
+        gap: 20px; 
+        margin-left: auto; 
+        margin-right: 20px;
+
+       }
+       
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="faixa-preta">
+
+
+    <div class="header">
+        <div class="logo">
+            <img src="filmes trash/lançamentos/22082019170714.png" alt="logo" width="130">
+        </div>
+
+
+        <label for="site-search">Busque seu filme aqui:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="search" id="site-search" name="q" />
+        
+        <button>Buscar </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <div class="menu">
+            <ul>
+                <li><a href="https://darkflixplus.com.br/cadastro"><button onclick="copy()">Cadastrar</button></a></li>
+                <li><a href = "https://www.darkflixplus.com/login"><button onclick="copy()">Login</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+      
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br />
+<br />
+<br />
+<br /> 
+<br />
+<br />
+<br />
+
+    <p class="banner1">
+         <img src="filmes trash/darkflik banner1.jpg" alt="banner1" width="850">
+    </p>
+<br/>
+<br/>
+<br/>
+    <p class="texto_esquerda">
+      Conheça nosso catálogo de filmes fantásticos. Assine Agora. Se tiver coragem!
+    </p>
+    <br/>
+    <br/> 
+
+    <a href="https://darkflixplus.com.br/cadastro">
+    <input class="botaoassine" type="button" value="ASSINE AGORA" />
+</a>
+
+
+<br /> 
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="faixa_de_texto">
+
+<table>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <td>
+        <h5 class="titulo1">ASSISTA QUANDO E DE ONDE QUISER
+        <br />
+        <h5 class="texto1"> 
+            Se você tiver coragem, pode assistir na TV, 
+            no celular, tablet ou notebook! 
+            Basta baixar o App ou acessar no seu navegador e aproveitar.</h5>
+
+    </td>
+
+    <td>
+        <h5 class="titulo2">O MELHOR DO HORROR POR ASSINATURA
+        <h5 class="texto2">
+             Com catálogo renovado periodicamente a Darkflix+ 
+             é a pioneira e o mais importante
+             serviço de streaming de vídeo dedicado ao gênero no mundo.</h5>
+
+    </td>
+
+    <td>
+        <h5 class="titulo3">PREÇO JUSTO. ASSINE E APROVEITE!
+            <h5 class="texto3"> Filmes e séries premiadas, clássicos nacionais e internacionais. 
+                Com o plano anual você paga o equivalente a R$ 9,15/mês.</h5>
+
+    </td>
+    </table>
+
+<hr />
+
+
+
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="grade">
+
+<table>
+
+    <h2>Lançamentos</h2>
+<tr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=fEIhFZtRMkM"><img src="filmes trash/lançamentos/asvin.jpg" alt= "asvin" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://www.youtube.com/watch?v=NT7d8sWLVCM"><img src="filmes trash/lançamentos/filmes_16778_exorcista-do-papa-2.jpg" alt="opadre"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=yHfaQy2vAG0"><img src="filmes trash/lançamentos/sobre.jpg" alt="insi" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=A4TkFCRXlO8"><img src="filmes trash/lançamentos/pesadelo.jpg" alt="pesade"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=AG0-NXjnDC0"><img src="filmes trash/lançamentos/depreto.jpg" alt="depreto" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=4JGFXOVBTxM"><img src="filmes trash/lançamentos/eli.jpg" alt="outlimo" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=3cYa4lkvx9s"><img src="filmes trash/lançamentos/13.jpg" alt="13" width="130" height="200"></a>
+
+ 
+</tr>
+
+
+   <h2>Anos 80 e 90</h2>
+<tr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=dL3hX1VtgFw"><img src="filmes trash/shakma.jpg" alt= "shakma" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=d5vqoziQZRA"><img src="filmes trash/visao_terror.jpg" alt="visao terror"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=hG2G3NIQPwk"><img src="filmes trash/robot_trash.jpg" alt="robot"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=CfbFzX-sEWk"><img src="filmes trash/massacre_trash.jpg" alt="massacre"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=R1vbGQVsvuM"><img src="filmes trash/headoffam.html.jpg" alt="head"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=T5ke9IPTIJQ"><img src="filmes trash/halloween.jpg" alt="halloween"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=PMRH0RIEjnc"><img src="filmes trash/espanto.jpg" alt="espanto"width="130" height="200"></a>
+ 
+</tr>
+<h2>Gore Filmes</h2>
+<tr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=MnqGcIuaTIo"><img src="filmes trash/lançamentos/fromnight.jpg" alt= "fromnight" width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=U3rhIiCjseE"><img src="filmes trash/lançamentos/terrifier].jpg" alt="terrifier"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=Wrw1erLXx1k"><img src="filmes trash/lançamentos/goregrind .jpg" alt="gore"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=w-8NSU8-OFY"><img src="filmes trash/lançamentos/canifilms.jpg" alt="cani"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=oUlgwJNdu2I"><img src="filmes trash/Hellraser.jpg" alt="Hellraser"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=ZPnQBSe4ta8"><img src="filmes trash/lançamentos/trezetre.jpg" alt="treze"width="130" height="200"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href ="https://www.youtube.com/watch?v=F-5Xus_DwSU"><img src="filmes trash/lançamentos/snuff.jpg" alt="snuff"width="130" height="200"></a>
+ 
+</tr>
+</div>
+
+    <br/>
+    <br/>
+    <br/>
+<div class="faixa-preta2">
+<div class="botoessociais">
+    <div class="icones">
+
+<a href = "https://www.facebook.com/www.darkflixplus.com.br"><img src="filmes trash/lançamentos/facebook.png" alt="facebook" width="50"></a></p>&nbsp;&nbsp;&nbsp;
+
+<a href = "https://www.instagram.com/darkflixplusbr/"><img src="filmes trash/lançamentos/instagram.png" alt="facebook" width="50"></a></p>&nbsp;&nbsp;&nbsp;
+ 
+<a href = "https://www.whatsapp.com/?lang=pt_BR"><img src="filmes trash/lançamentos/whatsapp.png" alt="facebook" width="50"></a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<div class="links">
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://darkflixplus.com.br/politicas"> Politica de Privacidade </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://darkflixplus.com.br/termos-de-uso">Termos e condições de uso </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://darkflixplus.com.br/termos-de-uso">Ajuda</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
